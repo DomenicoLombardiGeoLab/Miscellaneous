@@ -3,7 +3,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm
-import streamlit
+import streamlit as st
+
 
 # set variables defining normal distribution: mean, standard deviation, sample size
 
@@ -42,9 +43,9 @@ fig, ax = plt.subplots()
 ax.hist(data, bins =200, density = True)
 ax.plot(x, y, 'k', linewidth = 2)
 ax.set_title(title)
-#plt.show()
+plt.show()
 
-streamlit.pyplot(fig)
+st.pyplot(fig)
 
 
 print('Script read correctly')
